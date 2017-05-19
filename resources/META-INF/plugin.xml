@@ -17,7 +17,7 @@
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="139" until-build="139.*"/>
+  <idea-version since-build="141.0" />
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <!-- uncomment to enable plugin in all products
@@ -35,7 +35,7 @@
     <!--</action>-->
 
 
-    <action id="ProjectPopupMenuBtn" class="action.ProjectPopupMenuBtn" text="ClearBom">
+    <action id="ProjectPopupMenuBtn" class="action.ProjectPopupMenuBtn" text="ClearUtf8Bom">
       <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="EditSource"/>
     </action>
 
