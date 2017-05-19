@@ -1,0 +1,44 @@
+<idea-plugin>
+  <id>com.github.SilenceSu</id>
+  <name>ClearUtf8Bom</name>
+  <version>1.0</version>
+  <vendor email="silence.sx@gmail.com" url="https://github.com/SilenceSu">SilenceSu</vendor>
+
+  <description><![CDATA[
+      this plugin is clear utf8 bom , defalut *.java files.
+    ]]></description>
+
+  <change-notes><![CDATA[
+
+      v1.0
+          clearBom button is project   Popup Menu
+
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="139" until-build="139.*"/>
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <!--<action id="ToolsMenuBtn" class="action.ToolsMenuBtn" text="ClearBom" description="clear project   bom">-->
+      <!--<add-to-group group-id="ToolsMenu" anchor="first"/>-->
+    <!--</action>-->
+
+
+    <action id="ProjectPopupMenuBtn" class="action.ProjectPopupMenuBtn" text="ClearBom">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="EditSource"/>
+    </action>
+
+  </actions>
+
+</idea-plugin>
